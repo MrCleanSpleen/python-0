@@ -1,0 +1,65 @@
+#!/usr/bin/env python3
+import colors as c
+import random as r
+import time 
+print(c.clear)
+print('What is your name?')
+name = input(c.red + '> ' + c.green)
+
+print(c.green+'''
+Welcome to the Magic Eight Ball.
+Enter Your Question Below.
+''')
+answers = [
+    'Yes.',
+    'No.',
+    'Dont count on it',
+    'My sources say yes',
+    'Very Doubtful',
+    'Signs point to yes',
+    'Outlook not so good',
+    'You may rely on it',
+    'Concentrate and ask again',
+    'Better not tell you now',
+    'I dont know, but Google probably does',
+    'If I told you I would have to kill you',
+    'your mom',
+    'LEAVE ME ALONE!!!!!!!!!!!!!!!!',
+    name + ', I am your father!',
+    'Get off my lawn!',
+    'yer a wizard ' + name,
+    'I dont care',
+    'over 9000!!!!!!',
+    'Would you care for some tea?',
+    'I like trains',
+    'You smell bad',
+    'I honestly dont know',
+    'Do you wanna build a snowman?',
+    'What does the fox say?',
+    'Stop fooling around and go do your homework',
+    'Do us all a favor and go die in a hole ' + name,
+   'Thats a stupid question',
+   'Get off the computer and GO OUTSIDE!!!',
+   'You ask too many questions. I must kill you now',
+   'Ask your dad',
+   'Look behind you, ' + name]
+while True:
+    question = input(c.green +'> '+c.yellow)
+    if question == 'exit please':
+        exit()
+    if question == 'am i smart':
+        print('no')
+    if question == 'do you like girls':
+        print('No, but I like you.')
+    if question == 'am i stupid':
+        print('yes')
+    if question == 'is simon retarded':
+        print('extremely')
+    if question == 'exit':
+        print('Say the magic word!')
+    time.sleep(1.5)
+    answer = r.choice(answers)
+    else:
+        print(c.blue+answer+c.reset)
+
+

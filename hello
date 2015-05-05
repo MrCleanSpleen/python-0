@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+yellow = '\033[0;33m'
+purple = '\033[1;35m'
+print (yellow + 'Hello'+ purple + ' World.' )
