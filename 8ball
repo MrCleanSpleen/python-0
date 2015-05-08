@@ -57,9 +57,7 @@ while True:
         print('extremely')
     if question == 'exit':
         print('Say the magic word!')
-    time.sleep(1.5)
-    answer = r.choice(answers)
     else:
-        print(c.blue+answer+c.reset)
-
+        answer = r.choice(answers)
+        print(answer)
 
