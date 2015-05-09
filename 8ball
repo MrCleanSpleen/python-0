@@ -46,6 +46,7 @@ answers = [
 while True:
     question = input(c.green +'> '+c.yellow)
     if question == 'exit please':
+        print(c.clear)
         exit()
     if question == 'am i smart':
         print('no')
