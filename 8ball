@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import colors as c
 import random as r
-import time 
+import time as t
 print(c.clear)
 print('What is your name?')
 name = input(c.red + '> ' + c.green)
