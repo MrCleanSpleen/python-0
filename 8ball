@@ -59,7 +59,7 @@ while True:
     if question == 'exit':
         print('Say the magic word!')
     else:
-        print(c.clear)
         answer = r.choice(answers)
         print(answer)
-
+        t.sleep(2)
+        print(c.clear)
