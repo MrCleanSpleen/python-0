@@ -48,16 +48,6 @@ while True:
     if question == 'exit please':
         print(c.clear)
         exit()
-    if question == 'am i smart':
-        print('no')
-    if question == 'do you like girls':
-        print('No, but I like you.')
-    if question == 'am i stupid':
-        print('yes')
-    if question == 'is simon retarded':
-        print('extremely')
-    if question == 'exit':
-        print('Say the magic word!')
     else:
         answer = r.choice(answers)
         print(answer)
